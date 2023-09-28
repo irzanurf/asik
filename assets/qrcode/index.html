@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>QR Code With Custom Logo & Label Example</title>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<style>
+body { text-align: center; }
+h1 { text-align: center; margin: 15px auto;  }
+</style>
+</head>
+
+<body>
+
+  <h1>QR Code With Custom Logo & Label Example</h1>
+  <div class="demo"></div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="dist/jquery-qrcode.js"></script>
+<script>
+  $(".demo").qrcode({
+    size: 300,
+     fill: '#333',
+    text: 'https://www.codehim.com',
+    mode: 1,
+    label: 'CodeHim',
+    fontcolor: '#e41b17'
+  });
+</script>
+
+</body>
+</html>
